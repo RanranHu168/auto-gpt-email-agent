@@ -104,3 +104,9 @@ Sensitive information (email, password) is excluded from this repo.
 
 A .env.example file is provided for configuration reference.
 
+## 🎬 Project Demonstration Video
+
+You can download and view the full setup and testing process in the video below:
+
+👉 [📥 Click here to download the demo video](./Video_Recording.mov)
+
