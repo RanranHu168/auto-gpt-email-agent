@@ -1,4 +1,10 @@
+> This project demonstrates the installation and configuration of **Auto-GPT** on a macOS system, integrating the official **Email Plugin** to enable AI-based Gmail operations.  
+> It includes plugin setup, environment debugging, and an execution video demo.
+
+---
+
 # 🧠 Project 3: Creating an Autonomous Agent for Email Management
+
 
 **Team Member**: Ranran Hu  
 **Course**: Artificial Intelligence  
