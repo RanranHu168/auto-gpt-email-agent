@@ -116,7 +116,3 @@ You can download and view the full setup and testing process in the video below:
 
  HEAD
 👉 [📥 Click here to download the demo video](./Video_Recording.mov)
-
-
-👉 [📥 Click here to download the demo video](./Video_Recording.mov)
-3e4dec3... Save local changes before rebase
