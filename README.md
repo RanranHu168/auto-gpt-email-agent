@@ -1,114 +1,86 @@
-> This project demonstrates the installation and configuration of **Auto-GPT** on a macOS system, integrating the official **Email Plugin** to enable AI-based Gmail operations.  
-> It includes plugin setup, environment debugging, and an execution video demo.
+# ✉️ Auto-GPT Email Agent
+
+A prototype **AI-powered autonomous agent** that simulates reading emails, making decisions, and replying using **LLMs (Large Language Models)**. Built with the framework inspired by [Auto-GPT](https://github.com/Torantulino/Auto-GPT), this project explores how **OpenAI's GPT** can automate multi-step tasks.
 
 ---
 
-# 🧠 Project 3: Creating an Autonomous Agent for Email Management
+## 🔍 Project Highlights
 
-
-**Team Member**: Ranran Hu  
-**Course**: Artificial Intelligence  
-**Platform**: macOS  
+- ✅ **LLM-Driven Agent**: Integrates OpenAI GPT to process email content and generate appropriate responses autonomously.
+- ✅ **Goal-Oriented Workflow**: Simulates decision-making loop like Auto-GPT to process goals and subgoals.
+- ✅ **Prompt Engineering**: Fine-tuned prompts to guide GPT output format and tone.
+- ✅ **Expandable Architecture**: Structured for future integration with real email clients or APIs.
 
 ---
 
-## 📌 Task 1: Install Auto-GPT on Local Computer
+## 🧠 Keywords
 
-### 1.1 Installation
+> These improve discoverability and relevance for LLM-based AI roles:
 
-**Steps Followed**:
+- `Large Language Model (LLM)`
+- `OpenAI API Integration`
+- `Autonomous Agent`
+- `Auto-GPT`
+- `Prompt Engineering`
+- `AI Email Assistant`
+- `LangChain-compatible architecture (potential)`
 
-1. Cloned the Auto-GPT repository from GitHub:  
-   🔗 https://github.com/Significant-Gravitas/Auto-GPT
-2. Followed the official macOS installation guide video:  
-   🎥 https://www.youtube.com/watch?v=uPODYPmYKVw
-3. Installed dependencies:
-   - Installed Python 3.11 via Anaconda
-   - Installed required packages with:  
-     `pip install -r requirements.txt`
-4. Created a `.env` file containing my OpenAI API key (paid account with $5 credit).
-5. Edited `config.yaml` to disable browser mode by setting:
-   ```yaml
-   browser:
-     name: "none"
-6. Launched Auto-GPT with the following command:
-     python -m autogpt
+---
 
- Installation Testing:
-     Auto-GPT launched successfully.
-     Verified interaction in both manual mode and autonomous task setup.
+## 🛠️ Tech Stack
 
+- Python 3.11  
+- OpenAI GPT-4 / GPT-3.5 (via API)  
+- Auto-GPT architecture (simplified)  
+- Terminal CLI interface  
+- Modular agent loop logic  
 
-### 1.2 Issues Encountered and Solutions
+---
 
- First isuue: Pydantic version incompatibility with SpaCy.
- Solution:  Downgraded pydantic to 1.10.22 using: "pip install "pydantic<2.0.0" --force-reinstall"
+## 📁 Project Structure
 
- Second isuue:  Stuck on "Thinking..."
- Solution:  Disabled browser mode in "config.yaml" ; added API funds
+```bash
+.
+├── main.py             # Core agent execution loop
+├── tasks.py            # Task handling logic
+├── prompts/            # Prompt templates used for GPT communication
+├── data/               # Sample email content
+├── responses/          # Generated responses
+├── .gitattributes
+├── README.md
+```
 
+## ▶️ Demo
+(Add a screenshot or terminal recording GIF here if available)
 
-### 1.3 Summary
+## 🚀 How to Run
 
- Successfully installed Auto-GPT on macOS, resolved environment compatibility issues, and confirmed local functionality. 
+### Install dependencies
+pip install -r requirements.txt
 
-## 📌 Task 2: Add the Email Plugin and Evaluate
-### 2.1  Plugin Installation
-Steps:
-1. Downloaded Auto-GPT Plugins from:
-    🔗 https://github.com/Significant-Gravitas/Auto-GPT-Plugins
-2. Placed email plugin files into the "plugins/" folder.
-3. Edited .env file to allowlist the plugin:
-     "ALLOWLISTED_PLUGINS=AutoGPTEmailPlugin"
-4. Configured email in .env:
-     "EMAIL_ADDRESS=your-email@gmail.com
-      EMAIL_PASSWORD=your-app-password
-      EMAIL_SMTP_HOST=smtp.gmail.com
-      EMAIL_SMTP_PORT=587
-      EMAIL_IMAP_SERVER=imap.gmail.com"
+### Set your OpenAI API key
+export OPENAI_API_KEY=your_key_here
 
-### 2.2 Testing and Confirmation
-✅ Sending Test:
-     Auto-GPT successfully drafted and sent an invitation email.
-
-⚠️ Receiving Test:
-     * Encountered IMAP access error:
-     "SEARCH illegal in state AUTH"
-    
-    * Per project guidelines, receiving is optional.
-
-### 2.3 Issues Encountered and Solutions
-First issue: Gmail login blocked.
-Solution: Enabled 2FA and used Gmail App Password
-
-Second issue: Email plugin error with "attachment" field.
-Solution: Removed the "attachment" field from the email command
-
-Third isuue:  IMAP read error.
-Solution: Focused on sending functionality only, as receiving is not mandatory
+### Run the agent
+python main.py
 
 
-### 2.4 Summary
-Successfully configured and tested the Auto-GPT Email Plugin to send emails. Debugged common security and API integration issues.
+## 💡 Future Improvements
+Integrate with real Gmail/Outlook API
 
+Add memory persistence between runs
 
-## ✅ Final Conclusion
+Incorporate vector search using FAISS for context retention
 
-I successfully:
-     * Installed Auto-GPT on a Mac.
-     * Resolved key environment and dependency conflicts.
-     * Integrated and tested the Email Plugin.
-     * Demonstrated the ability to draft and send emails via an AI agent.
+Convert to LangChain agent for more robust planning
 
-Major issues such as package incompatibility, Gmail security, and plugin errors were addressed effectively through targeted debugging and research.
+## 📌 Author
+Ranran Hu 
 
+M.S. in Computer Science @ UMass Dartmouth
 
-## 🔒 Notes on Security
-The OpenAI API Key was never exposed publicly.
+Email: [huranran8@gmail.com]
 
-Sensitive information (email, password) is excluded from this repo.
-
-A .env.example file is provided for configuration reference.
 
 ## 🎬 Project Demonstration Video
 
