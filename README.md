@@ -51,7 +51,8 @@ A prototype **AI-powered autonomous agent** that simulates reading emails, makin
 ```
 
 ## ▶️ Demo
-(Add a screenshot or terminal recording GIF here if available)
+📸 ![Demo Screenshot](email-sended.png)
+📸 ![Demo Screenshot](email-received.png)
 
 ## 🚀 How to Run
 
