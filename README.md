@@ -80,7 +80,7 @@ Ranran Hu
 
 M.S. in Computer Science @ UMass Dartmouth
 
-Email: [huranran8@gmail.com]
+Email: huranran8@gmail.com
 
 
 ## 🎬 Project Demonstration Video
